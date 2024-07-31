@@ -4,16 +4,10 @@ import "./App.css";
 function App() {
   const [answer, setAnswer] = useState("");
   const [expression, setExpression] = useState("0");
-  //TODO: buttonpress
-  function buttonPress(symbol: string) {
-    if (symbol === "C") {
-      setExpression("0");
-      setAnswer("");
-    } else {
-      setExpression(symbol);
-      setAnswer(symbol);
-    }
-  }
+
+  //TODO: buttonpress;
+  function buttonPress(symbol: string) {}
+
   //TODO: calculate
   function calculate() {}
 
@@ -27,7 +21,7 @@ function App() {
         </div>
         <button
           id="clear"
-          onClick={() => buttonPress("C")}
+          onClick={() => buttonPress("clear")}
           className="light-gray"
         >
           C
@@ -104,25 +98,25 @@ function App() {
         >
           9
         </button>
-        <button id="add" onClick={() => buttonPress("+")} className="yellow">
+        <button id="add" onClick={() => buttonPress("+")} className="green">
           +
         </button>
         <button
           id="subtract"
           onClick={() => buttonPress("-")}
-          className="yellow"
+          className="green"
         >
-          -
+          –
         </button>
         <button
           id="multiply"
           onClick={() => buttonPress("*")}
-          className="yellow"
+          className="green"
         >
-          *
+          ×
         </button>
-        <button id="divide" onClick={() => buttonPress("/")} className="yellow">
-          /
+        <button id="divide" onClick={() => buttonPress("/")} className="green">
+          ÷
         </button>
         <button
           id="decimal"
@@ -131,7 +125,7 @@ function App() {
         >
           .
         </button>
-        <button id="equals" onClick={() => buttonPress("=")} className="yellow">
+        <button id="equals" onClick={() => buttonPress("=")} className="green">
           =
         </button>
       </div>

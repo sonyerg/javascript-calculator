@@ -48,18 +48,18 @@
   color: #eaeaea;
 }
 
-.yellow {
-  border-color: green;
-  background-color: rgb(144, 144, 144);
+.green {
+  background-color: #2d2d2d;
   color: #64fd7b;
   font-weight: 500;
+  font-size: 36px;
 }
 
 button {
   font-size: 30px;
   height: 100px;
   width: 100%;
-  border: 0.75px;
+  border: 0;
   cursor: pointer;
   border-radius: 10px;
   transition: transform 0.1s ease-in-out;
