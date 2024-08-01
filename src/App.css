@@ -15,11 +15,6 @@
   align-items: center;
 }
 
-#display {
-  font-size: 24px;
-  text-align: right;
-}
-
 #calculator {
   display: grid;
   grid-template-areas:
@@ -30,7 +25,7 @@
     "one two three add"
     "zero zero decimal equals";
   grid-template-columns: 100px 100px 100px 100px;
-  gap: 20px;
+  gap: 10px;
   padding: 50px;
   padding-top: 10px;
   margin-top: 20px;
@@ -69,6 +64,11 @@ button:active {
   transform: scale(0.95);
 }
 
+#display {
+  grid-area: display;
+  text-align: right;
+}
+
 #answer {
   height: 48px;
   font-size: 48px;
@@ -79,10 +79,7 @@ button:active {
   height: 30px;
   color: var(--dark-gray);
   margin-top: 10px;
-}
-
-#display {
-  grid-area: display;
+  margin-bottom: 10px;
 }
 
 #divide {
